@@ -6,7 +6,7 @@ import axios from 'axios';
 // Para descobrir o IP no Windows, abra o CMD e digite `ipconfig`.
 // Procure por "Endereço IPv4".
 // -----------------------------------------------------------------
-const BASE_URL = 'http://192.168.0.20:3000'; 
+const BASE_URL = 'https://appagenda-0fat.onrender.com'; 
 
 let authToken = null;
 
