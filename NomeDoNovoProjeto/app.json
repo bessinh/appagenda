@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "meu-app-novo",
+    "slug": "meu-app-novo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Este aplicativo usa sua localização para encontrar dentistas próximos a você."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "RECEIVE_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/app.png",
+          "color": "#ffffff"
+        }
+      ]
+    ]
+  }
+}
