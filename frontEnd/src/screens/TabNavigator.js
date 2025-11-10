@@ -84,18 +84,10 @@ const MainTabNavigator = ({ navigation, route = { params: {} }, onLogout }) => {
                     ),
                 }}
             />
-            <Tab.Screen
-                name="Notificações"
-                component={TelaNotificacoesCliente}
-                options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <Feather name="bell" size={size} color={color} />
-                    ),
-                    tabBarBadge: null,
-                }}
-            />
+           
+          
             
-            {/* MUDANÇA 2: Passamos a "navigation" para a TelaMenu */}
+        
             <Tab.Screen
                 name="Menu"
                 children={() => <TelaMenu navigation={navigation} onLogout={onLogout} />}
